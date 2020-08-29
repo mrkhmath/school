@@ -4,17 +4,13 @@ const Home = () => {
   const getdata = async (num) => {
     try {
       const body = { esis: num };
-      const response = await fetch("http://mutanabi.herokuapp.com/st", {
+      const response = await fetch("https://mutschool.herokuapp.com/st", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
       const jsonData = await response.json();
-      if (jsonData.grade === "still") {
-        document.getElementById("ename").innerHTML = jsonData.ename;
-        document.getElementById("edutype").innerHTML = "الطالب دور ثان";
-        document.getElementById("home").innerHTML = "";
-      } else {
+     
         if (jsonData.edutype === "DL") {
           document.getElementById("edutype").innerHTML =
             "تعلم عن بعد من المنزل";
@@ -26,7 +22,7 @@ const Home = () => {
           document.getElementById("ename").innerHTML = jsonData.ename;
           document.getElementById("home").innerHTML = jsonData.home;
         }
-      }
+      
     } catch (err) {
       document.getElementById("ename").innerHTML = "يرجي التأكد من رقم الطالب";
       document.getElementById("edutype").innerHTML = "";
