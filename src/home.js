@@ -4,7 +4,7 @@ const Home = () => {
   const getdata = async (num) => {
     try {
       const body = { esis: num };
-      const response = await fetch("https://mutschool.herokuapp.com/st", {
+      const response = await fetch("https://mutanabi.herokuapp.com/st", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
