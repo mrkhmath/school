@@ -1,7 +1,10 @@
- 
 {
   "name": "mutschool",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.4"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -12,12 +15,10 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-  
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,7 +35,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-  
-  }
+  "devDependencies": {}
 }
