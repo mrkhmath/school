@@ -84,7 +84,7 @@ app.post("/los/list/all", async (req, res) => {
 //   }
 // });
 
-
+app.get('/', (req, res)=> { res.send(client.mtu) })
 app.post("/st", async (req, res) => {
   try {
     const { esis } = req.body;
