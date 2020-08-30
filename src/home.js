@@ -36,7 +36,7 @@ const Home = () => {
       <h3 className="text-center mt-5">ادخل رقم الطالب لمعرفة نوع التعلم</h3>
       <div
         className="group-form d-inline-flex p-2"
-        style={{ marginLeft: "35%", marginTop: "10%" }}
+        style={{ marginLeft: "25%", marginTop: "10%" }}
       >
         <input
           type="text"
@@ -47,7 +47,7 @@ const Home = () => {
           ابحث
         </button>
       </div>
-      <blockquote className="blockquote text-center mt-5">
+      <blockquote className="blockquote text-center mt-5 mr-3">
         <h5 id="ename"></h5>
         <h5 id="home"></h5>
         <h5 id="edutype"></h5>
